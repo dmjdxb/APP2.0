@@ -16,20 +16,6 @@ import plotly.graph_objects as go
 
 
 
-# ✅ FastAPI (not used by Streamlit unless run externally)
-app = FastAPI()
-app.include_router(router)
-
-@app.get("/")
-def read_root():
-    return {
-        "status": "✅ FastAPI is running",
-        "message": "Welcome to your CGM + WHOOP + GPT API"
-    }
-
-
-
-# ✅ Verified GPT-4 client setup with working key
 
 
 
